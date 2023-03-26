@@ -1,0 +1,23 @@
+.select__bar {
+  width: 100%;
+  padding: 9.6px 20px;
+  outline: none;
+  border: none;
+  margin-right: 8px;
+  border-radius: 5px;
+  margin-bottom: 32px;
+
+  color: inherit;
+  padding: 9.6px 20px;
+  font-size: 1.3rem;
+  padding: 1.6rem;
+}
+
+.select__bar__dark {
+  background-color: hsl(209, 23%, 22%);
+}
+
+.select__bar__white {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 0 12px -5px rgb(0 0 0 / 20%);
+}

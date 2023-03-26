@@ -1,0 +1,59 @@
+.country__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden;
+  min-width: 210px;
+  border-radius: 11px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  transition: 0.2s all;
+}
+
+.country__item__white {
+  color: black;
+}
+
+.country__item:hover {
+  transform: translateY(-10px);
+}
+
+.country__flag__container {
+  height: 100%;
+}
+.country__flag__image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.country__item__detail__container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.country__item__detail__container_dark {
+  background-color: hsl(209, 23%, 22%);
+}
+.country__item__detail__container_white {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: black;
+}
+
+.country__item__detail__container h3 {
+  padding-bottom: 1rem;
+  font-size: 1.7rem;
+}
+
+.detail__bolded {
+  font-weight: 600;
+}
+
+.country__link {
+  text-decoration: none;
+  color: #fff;
+}

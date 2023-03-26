@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./index.css";
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+import CountryDetails from "./components/Hero/CountryDetails";
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
+  useEffect(() => {
+    const body = document.body;
+    if (isDarkMode) {
+      body.style.backgroundColor = "hsl(207, 26%, 17%)";
+      body.style.color = "#fff";
+    } else {
+      body.style.backgroundColor = "hsl(0, 0%, 98%)";
+      body.style.color = "#000";
+    }
+  }, [isDarkMode]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <>
+        <Navbar setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode} />
+        <Routes>
+          <Route path="/" element={<Hero isDarkMode={isDarkMode} />} />
+          <Route
+            path="/countries/:name"
+            element={<CountryDetails isDarkMode={isDarkMode} />}
+          />
+        </Routes>
+      </>
+    </Router>
   );
 }
 

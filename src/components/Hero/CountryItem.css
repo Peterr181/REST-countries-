@@ -1,0 +1,41 @@
+.country__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden;
+  min-width: 210px;
+  border-radius: 11px;
+  cursor: pointer;
+
+  transition: 0.2s all;
+}
+
+.country__item:hover {
+  transform: translateY(-10px);
+}
+
+.country__flag__container {
+  height: 100%;
+}
+.country__flag__image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.country__item__detail__container {
+  background-color: hsl(209, 23%, 22%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.country__item__detail__container h3 {
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.detail__bolded {
+  font-weight: 600;
+}
