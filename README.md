@@ -7,7 +7,7 @@ https://restcountries.com/
 :dash: What I will do in the future?
 I think there's nothing to improve on this website but maybe I will catch small bugs so I will fix them!
 
-:grinning: Check live version!
+<p align="center">:grinning: Check live version!</p>
 <p align="center">https://countries-peterr.netlify.app/</p>
 
 How it looks? 
