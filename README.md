@@ -13,6 +13,8 @@ I think there's nothing to improve on this website but maybe I will catch small 
 How it looks? 
 ![desktop-design-home-dark](https://user-images.githubusercontent.com/102172769/227786963-e33e1d24-fe4f-4213-a63f-5b8d8847bcc6.jpg)
 ![desktop-design-home-light](https://user-images.githubusercontent.com/102172769/227786998-a9da199d-42f5-467a-a280-0ac330d53f05.jpg)
+![obraz](https://user-images.githubusercontent.com/102172769/228968025-5fa9f2ac-c150-417e-bf4d-5f7f10ed3fcc.png)
+
 
 
 The design and starter files are from frontendmentor.io. 
